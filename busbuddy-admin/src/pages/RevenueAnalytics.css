@@ -1,0 +1,109 @@
+.revenue-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f6fb;
+}
+
+.revenue-content {
+  flex: 1;
+  margin-left: 260px;
+  padding: 25px;
+}
+
+.revenue-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.revenue-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.revenue-card {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.revenue-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(108,61,244,0.2);
+}
+
+.revenue-card h2 {
+  font-size: 42px;
+}
+
+.revenue-card h3 {
+  margin: 10px 0;
+  color: #444;
+}
+
+.revenue-card p {
+  font-size: 28px;
+  font-weight: bold;
+  color: #6c3df4;
+}
+
+.table-card {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
+
+.table-card h2 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th {
+  background: #6c3df4;
+  color: white;
+  padding: 14px;
+  text-align: left;
+}
+
+table td {
+  padding: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+table tr:hover {
+  background: #f8f5ff;
+}
+
+@media (max-width:768px) {
+
+  .revenue-content {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .revenue-title {
+    font-size: 28px;
+  }
+
+  .revenue-cards {
+    grid-template-columns: 1fr;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+
+}

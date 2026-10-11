@@ -1,0 +1,292 @@
+/* =========================
+   Dashboard Layout
+========================= */
+
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f6fb;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 260px;
+  padding: 25px;
+  overflow-x: hidden;
+}
+
+/* =========================
+   Announcement Bar
+========================= */
+
+.announcement-bar {
+  background: linear-gradient(
+    135deg,
+    #6c3df4,
+    #8f67ff
+  );
+  color: white;
+  padding: 14px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(
+    108,
+    61,
+    244,
+    0.2
+  );
+}
+
+.announcement-bar marquee {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* =========================
+   Welcome Section
+========================= */
+
+.welcome-section {
+  margin-bottom: 30px;
+}
+
+.dashboard-title {
+  margin: 0;
+  color: #222;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.welcome-section p {
+  color: #666;
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* =========================
+   Dashboard Cards
+========================= */
+
+.cards {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.dashboard-card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 4px 18px rgba(
+    0,
+    0,
+    0,
+    0.08
+  );
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(
+    108,
+    61,
+    244,
+    0.25
+  );
+}
+
+.dashboard-card h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.dashboard-card h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.dashboard-card p {
+  font-size: 32px;
+  color: #6c3df4;
+  font-weight: bold;
+}
+
+/* =========================
+   Overview Cards
+========================= */
+
+.overview-card {
+  background: white;
+  margin-top: 25px;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(
+    0,
+    0,
+    0,
+    0.08
+  );
+}
+
+.overview-card h2 {
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.overview-card p {
+  color: #666;
+  line-height: 1.7;
+}
+
+.overview-card ul {
+  margin-top: 15px;
+  padding-left: 25px;
+}
+
+.overview-card li {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* =========================
+   Quick Actions
+========================= */
+
+.quick-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.quick-actions button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(
+    135deg,
+    #6c3df4,
+    #8f67ff
+  );
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.quick-actions button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(
+    108,
+    61,
+    244,
+    0.3
+  );
+}
+
+/* =========================
+   Activity Table
+========================= */
+
+.activity-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.activity-table th {
+  background: #6c3df4;
+  color: white;
+  padding: 14px;
+  text-align: left;
+}
+
+.activity-table td {
+  padding: 14px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.activity-table tr:hover {
+  background: #f8f8ff;
+}
+
+/* =========================
+   Scrollbar
+========================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6c3df4;
+  border-radius: 10px;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 1024px) {
+
+  .cards {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .main-content {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .dashboard-title {
+    font-size: 28px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-actions {
+    flex-direction: column;
+  }
+
+  .quick-actions button {
+    width: 100%;
+  }
+
+  .activity-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .dashboard-card h2 {
+    font-size: 38px;
+  }
+
+  .dashboard-card h3 {
+    font-size: 16px;
+  }
+
+  .dashboard-card p {
+    font-size: 24px;
+  }
+
+}

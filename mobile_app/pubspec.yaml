@@ -1,0 +1,131 @@
+name: mobile_app
+
+description: "BusBuddy 2.0 Smart Transport System"
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.8
+
+# =========================
+# DEPENDENCIES
+# =========================
+
+dependencies:
+
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # =========================
+  # NETWORKING
+  # =========================
+
+  http: ^1.6.0
+
+  # =========================
+  # SOCKET.IO
+  # =========================
+
+  socket_io_client: ^3.1.4
+
+  # =========================
+  # GOOGLE MAPS
+  # =========================
+
+  google_maps_flutter: ^2.17.0
+
+  # =========================
+  # GPS LOCATION
+  # =========================
+
+  geolocator: ^14.0.2
+
+  # =========================
+  # LOCAL STORAGE
+  # =========================
+
+  flutter_secure_storage: ^10.2.0
+
+  # =========================
+  # STATE MANAGEMENT
+  # =========================
+
+  provider: ^6.1.5+1
+
+  # =========================
+  # SEARCHABLE DROPDOWN
+  # =========================
+
+  dropdown_search: ^6.0.1
+
+  # =========================
+  # SVG SUPPORT
+  # =========================
+
+  flutter_svg: ^2.2.1
+
+  # =========================
+  # CSV SUPPORT
+  # =========================
+
+  csv: ^6.0.0
+
+  # Charts for Revenue Analytics
+  fl_chart: ^1.0.0
+
+  # Shared Preferences
+  shared_preferences: ^2.5.3
+
+  # Better API Handling
+  dio: ^5.9.0
+
+  # Date Formatting
+  intl: ^0.20.2
+
+  # Loading Animations
+  flutter_spinkit: ^5.2.2
+
+  # Additional Icons
+  font_awesome_flutter: ^10.10.0
+
+# =========================
+# DEV DEPENDENCIES
+# =========================
+
+dev_dependencies:
+
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+# =========================
+# FLUTTER CONFIG
+# =========================
+
+flutter:
+
+  uses-material-design: true
+
+  # =========================
+  # ASSETS
+  # =========================
+
+  assets:
+
+    - assets/images/bus.png
+
+    - assets/data/setc_buses.csv
+
+  # =========================
+  # FONTS (OPTIONAL)
+  # =========================
+
+  # fonts:
+  #   - family: Poppins
+  #     fonts:
+  #       - asset: assets/fonts/Poppins-Regular.ttf

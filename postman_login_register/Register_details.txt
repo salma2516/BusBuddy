@@ -1,0 +1,128 @@
+
+Admin_register:
+
+{
+  "name": "Admin User",
+  "email": "admin@gmail.com",
+  "password": "admin123",
+  "role": "ADMIN",
+  "phone": "9876543210"
+}
+
+
+{
+  "name": "Driver User",
+  "email": "driver@gmail.com",
+  "password": "driver123",
+  "role": "DRIVER",
+  "phone": "9876543212"
+}
+
+{
+  "name": "Passenger User",
+  "email": "passenger@gmail.com",
+  "password": "pass123",
+  "role": "PASSENGER",
+  "phone": "9876543211"
+}
+
+
+{
+  "name": "Conductor User",
+  "email": "conductor@gmail.com",
+  "password": "conductor123",
+  "role": "CONDUCTOR",
+  "phone": "9876543213"
+}
+
+
+Login 
+Admin:
+
+{
+  "email": "admin@gmail.com",
+  "password": "admin123"
+}
+
+{
+    "success": true,
+    "message": "Login Successful",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzc4OTMzMzU1LCJleHAiOjE3Nzk1MzgxNTV9.vCwK2J-6bfrXT1erbBhgSATbbz9bhq27KXeJiSlwCmQ",
+    "user": {
+        "id": 1,
+        "name": "Admin User",
+        "email": "admin@gmail.com",
+        "role": "ADMIN"
+    }
+}
+
+
+passenger:
+
+{
+  "email": "passenger@gmail.com",
+  "password": "pass123"
+}
+
+{
+    "success": true,
+    "message": "Login Successful",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6IlBBU1NFTkdFUiIsImlhdCI6MTc3ODkzMzQ0MywiZXhwIjoxNzc5NTM4MjQzfQ.ejPeraIgu2KmnEhK1DqKMBYPq9T0_e8x10vU8Od07vA",
+    "user": {
+        "id": 2,
+        "name": "Passenger User",
+        "email": "passenger@gmail.com",
+        "role": "PASSENGER"
+    }
+}
+
+
+Driver:
+
+{
+  "email": "driver@gmail.com",
+  "password": "driver123"
+}
+
+{
+    "success": true,
+    "message": "Login Successful",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Mywicm9sZSI6IkRSSVZFUiIsImlhdCI6MTc3ODkzMzUzNCwiZXhwIjoxNzc5NTM4MzM0fQ.Mj29Li9xFqbUQFWkYNkvIepC9IVNewwe76Q7F4ZHLvE",
+    "user": {
+        "id": 3,
+        "name": "Driver User",
+        "email": "driver@gmail.com",
+        "role": "DRIVER"
+    }
+}
+
+Conductor:
+
+{
+  "email": "conductor@gmail.com",
+  "password": "conductor123"
+}
+
+{
+    "success": true,
+    "message": "Login Successful",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6IkNPTkRVQ1RPUiIsImlhdCI6MTc3ODkzMzYyMCwiZXhwIjoxNzc5NTM4NDIwfQ.MZalGp5ecbQcAVydagXc2ryfGM_QwqrGt3nr9fY4BUM",
+    "user": {
+        "id": 4,
+        "name": "Conductor User",
+        "email": "conductor@gmail.com",
+        "role": "CONDUCTOR"
+    }
+}
+
+{
+    "success": true,
+    "message": "Login Successful",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzgyMjkwMzM5LCJleHAiOjE3ODI4OTUxMzl9.-xc1vSpYwSSaZswGyQDS2YCaxkmOrURx2Ux-o5lVLK8",
+    "user": {
+        "id": 1,
+        "name": "Admin User",
+        "email": "admin@gmail.com",
+        "role": "ADMIN"
+    }
+}
